@@ -11,3 +11,19 @@ console.log(arr.indexOf(4));
 console.log(arr.indexOf(2, 1));
 // 두번째 인수는 검색을 시작할 인덱스, 두번째 인수를 생략하면 처음부터 검색
 // 3이 출력
+
+const food = ['apple','banana','durian'];
+if(food.indexOf('lemon') === -1) {
+    // 만약 food 배열에 lemon이라는 요소가 존재하지 않는다면
+    food.push('orange');
+    // food 배열에 orange 추가
+}
+console.log(food);
+// [ 'apple', 'banana', 'durian', 'orange' ]
+
+// ↑다른 예시
+const foods = ['kimchi','rice','chobab','jjambbong'];
+if(!foods.includes('hambuger')) {
+    foods.push('durian');
+}
+console.log(foods);
